@@ -1,0 +1,133 @@
+ /* Unicode and ASCII Character Detector */
+ /* developed by Tawhidur Rahman Dear, https://www.tawhidurrahmandear.com */
+ /* Live Preview available at https://www.devilhunter.net/p/unicode-and-ascii-character-detector.html */
+
+
+
+/* Styles */
+ 
+body {
+  font-family: Tahoma, "Trebuchet MS", sans-serif;
+  color: #000000;
+}
+  
+
+/* Unicode and ASCII Character Detector Styles */
+
+/* Input & Select Styles */
+.unicode-and-ascii-character-detector_input, .unicode-and-ascii-character-detector_select {
+  font-family: Tahoma, "Trebuchet MS", sans-serif;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #6600FF;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+.unicode-and-ascii-character-detector_input:focus, .unicode-and-ascii-character-detector_select:focus {
+  border-color: #6600FF;
+  outline: none;
+}
+
+/* Button Styles */
+.unicode-and-ascii-character-detector_button {
+  padding: 15px 20px;
+  background-color: #6600FF;
+  color: #ffffff;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.unicode-and-ascii-character-detector_button:hover {
+  background-color: #e0ccff;
+  color: #000000;
+  transition: background-color 0.5s ease;
+}
+
+/* Textarea Styles */
+.unicode-and-ascii-character-detector_textarea {
+font-family: "Roboto Mono", "Source Code Pro", Consolas, Monaco, "Courier New", Courier, "Liberation Mono", monospace;
+  font-size: 14px;
+  width: 100%;
+  height: 400px;
+  padding: 25px;
+  margin-top: 20px;
+  border: 1px solid #6600FF;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #EEF3FA;
+  resize: none;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  white-space: pre-wrap;  
+  word-wrap: break-word; 
+  overflow-x: hidden; 
+}
+
+/* Link Styles */
+#unicode-and-ascii-character-detector p a {
+  font-family: Tahoma, "Trebuchet MS", sans-serif;
+  font-size: 10pt;
+  font-weight: 700;
+  color: #0078d7;
+  text-decoration: none;
+}
+
+#unicode-and-ascii-character-detector p a:hover {
+  text-decoration: none;
+}
+
+#unicode-and-ascii-character-detector_resultContainer {
+  margin-top: 20px;
+}
+		
+#unicode-and-ascii-character-detector_resultGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 5px;
+  margin-top: 10px;
+}
+		
+.unicode-and-ascii-character-detector_resultCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.unicode-and-ascii-character-detector_asciiCharacter {
+  background-color: #EEF3FA; /* Windows for ASCII characters */
+}
+        
+.unicode-and-ascii-character-detector_asciiSymbol {
+  background-color: #99bbff; /* Skyblue for ASCII symbols */
+}
+        
+.unicode-and-ascii-character-detector_unicodeCharacter {
+  background-color: #99ff99; /* Soft Green for Unicode characters */
+}
+        
+.unicode-and-ascii-character-detector_unicodeSymbol {
+  background-color: #ff8080; /* Soft Red for Unicode symbols */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #unicode-and-ascii-character-detector {
+    padding: 25px;
+  }
+
+  .unicode-and-ascii-character-detector_input, .unicode-and-ascii-character-detector_select, .unicode-and-ascii-character-detector_button, .unicode-and-ascii-character-detector_textarea {
+    font-size: 12px;
+  }
+}
