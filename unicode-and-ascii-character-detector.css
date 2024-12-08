@@ -121,13 +121,34 @@ font-family: "Roboto Mono", "Source Code Pro", Consolas, Monaco, "Courier New", 
   background-color: #ff8080; /* Soft Red for Unicode symbols */
 }
 
+.unicode-and-ascii-character-detector-indicator-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.unicode-and-ascii-character-detector-indicator-hr {
+	border: 1px solid #6600FF;
+	border-radius: 5px;
+}
+
+.unicode-and-ascii-character-detector-indicator-button {
+	font-size: 14px;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+    margin: 10px; 
+    padding: 10px;
+	width: 100%; 
+	word-break: break-word;
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   #unicode-and-ascii-character-detector {
     padding: 25px;
   }
 
-  .unicode-and-ascii-character-detector_input, .unicode-and-ascii-character-detector_select, .unicode-and-ascii-character-detector_button, .unicode-and-ascii-character-detector_textarea {
+  .unicode-and-ascii-character-detector_input, .unicode-and-ascii-character-detector_select, .unicode-and-ascii-character-detector_button, .unicode-and-ascii-character-detector_textarea, .unicode-and-ascii-character-detector-indicator-button {
     font-size: 12px;
   }
 }
