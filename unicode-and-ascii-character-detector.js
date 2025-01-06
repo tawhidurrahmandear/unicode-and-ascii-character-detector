@@ -7,6 +7,7 @@
             const textInput = document.getElementById("unicode-and-ascii-character-detector_textInput");
             const analyzeButton = document.getElementById("unicode-and-ascii-character-detector_analyzeButton");
             const resultGrid = document.getElementById("unicode-and-ascii-character-detector_resultGrid");
+			const resetButton = document.getElementById("unicode-and-ascii-character-detector_resetButton");
 
             analyzeButton.addEventListener("click", () => {
                 const text = textInput.value.trim();
@@ -42,5 +43,8 @@
                     resultGrid.appendChild(cell);
                 });
             });
+			resetButton.addEventListener("click", () => {
+			textInput.value = "";
+			resultGrid.innerHTML = "";
+			});
         });
- 
