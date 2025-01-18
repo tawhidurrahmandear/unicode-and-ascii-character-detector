@@ -1,4 +1,4 @@
-# Unicode and ASCII Character Detector <br>
+# [Unicode and ASCII Character Detector](https://www.devilhunter.net/p/unicode-and-ascii-character-detector.html) <br>
 HTML + JavaScript + CSS <br>
 * developed by Tawhidur Rahman Dear, https://www.tawhidurrahmandear.com <br>
 * Live Preview available at https://www.devilhunter.net/p/unicode-and-ascii-character-detector.html <br>
